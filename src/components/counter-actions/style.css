@@ -1,0 +1,23 @@
+.controls {
+  width: 400px;
+  padding: 10px;
+  background-color: rgba(24, 130, 93, 0.6);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.controls .minus,
+.controls .plus {
+  padding: 10px 30px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.controls .minus {
+  background-color: rgb(188, 50, 22);
+}
+.controls .plus {
+  background-color: rgb(22, 97, 194);
+}
