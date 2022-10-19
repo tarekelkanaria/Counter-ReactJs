@@ -1,0 +1,14 @@
+.poster {
+  width: 150px;
+  height: 150px;
+}
+.desc-wrapper {
+  /* white-space: nowrap; */
+  overflow: hidden;
+}
+.desc {
+  height: 100px;
+  width: 150px;
+  max-width: 150px;
+  text-overflow: ellipsis;
+}

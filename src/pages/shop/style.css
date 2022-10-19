@@ -4,3 +4,6 @@
 .item {
   cursor: pointer;
 }
+.loader {
+  padding-top: 100px;
+}
