@@ -11,7 +11,7 @@ const Navbar = () => {
             Logo
           </Link>
         </h2>
-        <ul className="list d-flex justify-content-around align-items-center">
+        <ul className="list d-flex justify-content-around align-items-center gap-3">
           <Link to="/">
             <li className="text-light fw-bold fs-3">Home</li>
           </Link>
@@ -20,6 +20,9 @@ const Navbar = () => {
           </Link>
           <Link to="/about">
             <li className="text-light fw-bold fs-3">About</li>
+          </Link>
+          <Link to="/counter">
+            <li className="text-light fw-bold fs-3">Support Us</li>
           </Link>
           <Link to="/cart">
             <li className="text-light fs-3">

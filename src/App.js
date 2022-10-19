@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Shop from "./pages/shop";
 import Cart from "./pages/cart";
 import Details from "./pages/shop/Details";
+import CounterContainer from "./components/counter-container/CounterContainer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/shop/:id" element={<Details />} />
+        <Route path="/counter" element={<CounterContainer />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>

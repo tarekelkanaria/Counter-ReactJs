@@ -1,22 +1,29 @@
 import Counter from "../counter/Counter";
 import CounterActions from "../counter-actions/CounterActions";
-import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { increment, decrement } from "../../redux/counterSlice";
 
 const CounterContainer = () => {
-  let [counterValue, setCounterValue] = useState(0);
-  const increase = () => {
-    setCounterValue(++counterValue);
+  let counterValue = useSelector((state) => state.counterStore.counter);
+  const dispatch = useDispatch();
+
+  const incrementCount = () => {
+    dispatch(increment());
   };
-  const decrease = () => {
-    setCounterValue(--counterValue);
+  const decrementCount = () => {
+    dispatch(decrement());
   };
+
   return (
     <>
       <div>
         <Counter result={counterValue} />
       </div>
       <div>
-        <CounterActions plus={increase} minus={decrease} />
+        <CounterActions
+          incrementCount={incrementCount}
+          decrementCount={decrementCount}
+        />
       </div>
     </>
   );

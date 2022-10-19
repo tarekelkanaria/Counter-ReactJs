@@ -1,5 +1,9 @@
+.container {
+  padding-top: 100px;
+}
 .result {
   background-color: #61dafb;
-  padding: 20px 20px;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
 }
