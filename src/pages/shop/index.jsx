@@ -34,9 +34,9 @@ const Shop = () => {
     );
   }
   return (
-    <div className="wrapper pt-5">
+    <div className="shop-wrapper py-5">
       <h1 className="pt-5 text-center text-primary">Our Products</h1>
-      <div className="shop-list container bg-success border border-info d-flex flex-wrap p-2">
+      <div className="shop-list container border border-info d-flex flex-wrap p-2">
         {products.map((product) => {
           return (
             <div

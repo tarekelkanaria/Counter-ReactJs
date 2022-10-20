@@ -2,7 +2,7 @@ import "./style.css";
 
 const CounterActions = (props) => {
   return (
-    <div className="wrapper d-flex justify-content-center align-items-center">
+    <div className="container action-wrapper d-flex justify-content-center align-items-center">
       <div className="controls">
         <button className="minus" onClick={props.decrementCount}>
           -

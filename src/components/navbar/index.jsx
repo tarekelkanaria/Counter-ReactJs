@@ -1,6 +1,7 @@
 import "./style.css";
 import { Link } from "react-router-dom";
-import { BsCart4 } from "react-icons/bs";
+import { BsCart4, BsPersonPlusFill } from "react-icons/bs";
+import { GrLogin } from "react-icons/gr";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
@@ -41,12 +42,19 @@ const Navbar = () => {
           <Link to="/about">
             <li className="text-light fw-bold fs-3">About</li>
           </Link>
-          <Link to="/signin">
-            <li className="text-light fw-bold fs-3">Signin</li>
-          </Link>
           <Link to="/counter" className="position-relative">
             {appearCounter}
             <li className="text-light fw-bold fs-3">Support Us</li>
+          </Link>
+          <Link to="/login">
+            <li className="text-light fw-bold fs-3">
+              <GrLogin className="login" />
+            </li>
+          </Link>
+          <Link to="/signup">
+            <li className="text-light fw-bold fs-3">
+              <BsPersonPlusFill />
+            </li>
           </Link>
           <Link to="/cart" className="position-relative">
             {appearCartCount}

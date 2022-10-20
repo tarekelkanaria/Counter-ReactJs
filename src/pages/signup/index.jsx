@@ -32,7 +32,7 @@ const SigninForm = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="signup container pb-5">
       <div className="border w-50 mx-auto p-5">
         <Form onSubmit={handleSubmit(onSubmit)}>
           <Form.Group className="mb-3" controlId="formEmail">
@@ -63,7 +63,7 @@ const SigninForm = () => {
             )}
           </Form.Group>
           {/* Pass */}
-          <Form.Group className="mb-3" controlId="لاasicPassword">
+          <Form.Group className="mb-3" controlId="basicPassword">
             <Form.Label>Password</Form.Label>
             <Form.Control
               type="password"
@@ -107,11 +107,56 @@ const SigninForm = () => {
           {errors?.select?.type === "required" && (
             <p className=" text-danger mt-2">This feild is required</p>
           )}
-          <Form.Group className="my-3" controlId="formBasicCheckbox">
+          <Form.Group className="my-3" controlId="formCheckbox">
+            <Form.Label>My Skills</Form.Label>
+            {["checkbox"].map((type) => (
+              <div key={`inline-${type}`} className="mb-3">
+                <Form.Check
+                  inline
+                  label="JavaScript"
+                  name="group1"
+                  type={type}
+                  id={`inline-${type}-1`}
+                  {...register("checkbox", {
+                    required: true,
+                  })}
+                />
+                <Form.Check
+                  inline
+                  label="TypeScript"
+                  name="group1"
+                  type={type}
+                  id={`inline-${type}-2`}
+                  {...register("checkbox", {
+                    required: true,
+                  })}
+                />
+                <Form.Check
+                  inline
+                  label="Bootstrap"
+                  type={type}
+                  id={`inline-${type}-3`}
+                  {...register("checkbox", {
+                    required: true,
+                  })}
+                />
+              </div>
+            ))}
+            {errors?.checkbox?.type === "required" && (
+              <p className=" text-danger mt-2">This feild is required</p>
+            )}
+          </Form.Group>
+          <Form.Group className="my-3" controlId="tirmsCheckbox">
             <Form.Check
               type="checkbox"
               label="I agree to tirms and conditions"
+              {...register("tirms", {
+                required: true,
+              })}
             />
+            {errors?.tirms?.type === "required" && (
+              <p className=" text-danger mt-2">This feild is required</p>
+            )}
           </Form.Group>
           {/* Submit */}
           <Button variant="primary" type="submit">

@@ -1,8 +1,5 @@
-.poster {
-  height: 250px;
-}
-.shop-wrapper,
-.item {
+.login-wrap {
+  padding-top: 150px;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -10,10 +7,6 @@
     #c850c0 46%,
     #ffcc70 100%
   );
-}
-.loader {
-  padding-top: 100px;
-}
-.shop-list {
-  background-color: white;
+  color: rgb(208, 194, 194);
+  font-size: 18px;
 }

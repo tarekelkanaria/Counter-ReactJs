@@ -1,8 +1,19 @@
 .container {
   padding-top: 200px;
 }
+.counter-wrap {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  height: 35vh;
+}
 .result {
   background-color: #61dafb;
+  color: rgb(221, 93, 241);
   border-radius: 50%;
   width: 150px;
   height: 150px;
