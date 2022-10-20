@@ -7,6 +7,8 @@ import Shop from "./pages/shop";
 import Cart from "./pages/cart";
 import Details from "./pages/shop/Details";
 import CounterContainer from "./components/counter-container/CounterContainer";
+import NotFound from "./pages/not-found";
+import SigninForm from "./pages/signup";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/shop/:id" element={<Details />} />
         <Route path="/counter" element={<CounterContainer />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/signin" element={<SigninForm />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

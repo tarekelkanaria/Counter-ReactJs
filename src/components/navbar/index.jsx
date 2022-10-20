@@ -41,6 +41,9 @@ const Navbar = () => {
           <Link to="/about">
             <li className="text-light fw-bold fs-3">About</li>
           </Link>
+          <Link to="/signin">
+            <li className="text-light fw-bold fs-3">Signin</li>
+          </Link>
           <Link to="/counter" className="position-relative">
             {appearCounter}
             <li className="text-light fw-bold fs-3">Support Us</li>
